@@ -1,0 +1,27 @@
+alias ls='ls -F --color=auto'
+
+alias grep='grep --color=auto'
+
+alias mv='nocorrect mv -iv'
+alias cp='nocorrect cp -iRv'
+alias rm='nocorrect rm -iv'
+
+alias mkdir='nocorrect mkdir -v'
+alias rmdir='nocorrect rmdir -v'
+
+alias qshow='w; echo; \
+	    df -h | sed -n -e "1p" -e "/\/dev\/sda1/p"; \
+	    echo; \
+	    df | sed -n -e "1p" -e "/\/dev\/sda1/p"; \
+	    echo; \
+	    tmux lsc'
+
+#alias qupd='sudo aptitude update && sudo aptitude upgrade'
+alias qscr='tmux new -ds dleg; tmux a -dt dleg'
+alias qebup='sudo tar -czf /home/backup/etc_$(date +\%F_\%T).BUp.tar.gz /etc'
+
+alias qlapache='sudo multitail -cS apache /var/log/httpd/access.log -cS apache_error /var/log/httpd/error.log'
+
+alias qqext='sudo vim -c "set number" /etc/asterisk/extensions.conf'
+alias qqsip='sudo vim -c "set number" /etc/asterisk/sip.conf'
+alias qdr='sudo asterisk -x "dialplan reload"'
