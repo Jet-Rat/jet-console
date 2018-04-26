@@ -17,7 +17,7 @@ alias qshow='w; echo; \
 	    tmux lsc'
 
 #alias qupd='sudo aptitude update && sudo aptitude upgrade'
-alias qscr='tmux new -ds dleg; tmux a -dt dleg'
+alias qscr='tmux new -ds ${USER}; tmux a -dt ${USER}'
 alias qebup='sudo tar -czf /home/backup/etc_$(date +\%F_\%T).BUp.tar.gz /etc'
 
 alias qlapache='sudo multitail -cS apache /var/log/httpd/access.log -cS apache_error /var/log/httpd/error.log'
@@ -25,3 +25,6 @@ alias qlapache='sudo multitail -cS apache /var/log/httpd/access.log -cS apache_e
 alias qqext='sudo vim -c "set number" /etc/asterisk/extensions.conf'
 alias qqsip='sudo vim -c "set number" /etc/asterisk/sip.conf'
 alias qdr='sudo asterisk -x "dialplan reload"'
+
+alias vim="vim -u ${HOME}/.vimrc"
+alias sudo="sudo EDITOR=\"vim -u ${HOME}/.vimrc\" VISUAL=\"vim -u ${HOME}/.vimrc\" "
