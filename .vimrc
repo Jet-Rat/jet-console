@@ -1,4 +1,5 @@
 set backspace=indent,eol,start
+set so=5
 
 set number
 set autoindent
