@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp -rv ../.aliases ../.tmux/ ../tmux.conf ../.vimrc ../.vim ../.zkbd/ ../.zsh/ ../.zshrc ~
+cp -rv ../.aliases ../.tmux/ ../.tmux.conf ../.vimrc ../.vim ../.zkbd/ ../.zsh/ ../.zshrc ~
 
 sed -i "s|~/.vim/|${HOME}/.vim/|g" ~/.vimrc 
 
