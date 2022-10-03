@@ -1,6 +1,6 @@
 # Jet-Console
 
-This is combination of tmux, zsh and vim with some configs and vim-plugins, that I like using in my work.
+This is a combination of tmux, zsh and vim with some configs and vim-plugins, that I like to use during my work.
 
 I've written only some of the config files and installation scripts by myself, still, all the programs and plugins are available freely.
 
@@ -20,7 +20,7 @@ Tmux, zsh and vim are most likely available in your favorite GNU/Linux distribut
 
 ## Installation
 
-BE CAREFUL AND MAKE SURE, YOU HAVE BACKUP OF YOUR OWN CONFIGS!!!
+BE CAREFUL AND MAKE SURE, YOU HAVE SAVER OF YOUR OWN CONFIGS!!!
 
 After you've cloned repo, you have to enter `jet-scripts` dir and run `install-tools.sh`, then `copy-configs.sh`.
 
